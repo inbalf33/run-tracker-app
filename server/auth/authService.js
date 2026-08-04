@@ -9,16 +9,16 @@ const auth = (req, res, next) => {
         const tokenFromClient = req.header("x-auth-token");
 
         if (!tokenFromClient) {
-            return res.status(401).send("Authentication Error: Please login");
+            return res.status(401).json({ message: "Authentication Error: Please login" });
         }
 
         // verify
         const userInfo = verifyToken(tokenFromClient);
 
         if (!userInfo) {
-            return res.status(401).send("Authentication Error: Unauthorized user");
+            return res.status(401).json({ message: "Authentication Error: Unauthorized user" });
         }
-        
+
         // Add user info to request object
         req.user = userInfo;
         next();
