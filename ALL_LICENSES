@@ -1,0 +1,44 @@
+========================================================================
+                       THIRD-PARTY LICENSES
+========================================================================
+
+This project uses third-party open-source libraries and frameworks.
+Below is the list of packages used in the project, their purpose,
+and their respective software licenses.
+
+------------------------------------------------------------------------
+SERVER DEPENDENCIES (Node.js / Express Environment)
+------------------------------------------------------------------------
+
+1. express
+   - Version: ^4.x
+   - Purpose: Web framework for Node.js server routing.
+   - License: MIT (https://opensource.org/licenses/MIT)
+
+2. mongoose
+   - Version: ^8.x
+   - Purpose: Object Data Modeling (ODM) library for MongoDB.
+   - License: MIT (https://opensource.org/licenses/MIT)
+
+3. dotenv
+   - Version: ^16.x
+   - Purpose: Environment variables management from .env files.
+   - License: BSD-2-Clause (https://opensource.org/licenses/BSD-2-Clause)
+
+4. bcryptjs
+   - Version: ^3.x / ^2.x
+   - Purpose: Optimized password hashing library for security.
+   - License: MIT (https://opensource.org/licenses/MIT)
+
+5. jsonwebtoken
+   - Version: ^9.x
+   - Purpose: JSON Web Token (JWT) implementation for auth/authorization.
+   - License: MIT (https://opensource.org/licenses/MIT)
+
+6. nodemon (Dev Dependency)
+   - Version: ^3.x
+   - Purpose: Development tool for automatically restarting Node application on code changes.
+   - License: MIT (https://opensource.org/licenses/MIT)
+
+========================================================================
+Note: Client-side (React) dependencies will be appended upon setup.
