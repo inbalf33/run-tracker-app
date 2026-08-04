@@ -90,3 +90,8 @@ CLIENT DEPENDENCIES (React / Frontend Environment)
    - Version: ^5.x
    - Purpose: Frontend tooling and fast development server.
    - License: MIT (https://opensource.org/licenses/MIT)
+
+   10. jwt-decode
+    - Version: ^4.0.0
+    - Purpose: Small library to decode JSON Web Tokens (JWT) payload on the client side.
+    - License: MIT (https://opensource.org/licenses/MIT)
