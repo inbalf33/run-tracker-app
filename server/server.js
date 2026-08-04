@@ -3,6 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const connectDB = require("./config/db");
 const usersRouter = require("./routes/userRestController"); 
+const runRestController = require("./routes/runRestController");
 
 const app = express();
 const port = process.env.PORT || 8181;
@@ -13,6 +14,7 @@ app.use(cors());
 
 // Routes 
 app.use("/api/users", usersRouter); 
+app.use("/api/runs", runRestController);
 
 app.get("/api/health", (req, res) => {
   res.status(200).json({ status: "OK", message: "Server is running smoothly" });
