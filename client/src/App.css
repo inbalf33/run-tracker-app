@@ -1,0 +1,20 @@
+
+.form-floating > label {
+  right: 0 !important;
+  left: auto !important;
+  transform-origin: 100% 0 !important;
+  text-align: right !important;
+}
+
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+  transform: scale(0.85) translateY(-0.5rem) translateX(-0.15rem) !important;
+}
+
+/* הזזת אייקון השגיאה/הצלחה של בוטסטראפ לצד שמאל */
+.form-floating > .form-control.is-invalid,
+.form-floating > .form-control.is-valid {
+  background-position: left 0.75rem center !important;
+  padding-left: calc(1.5em + 0.75rem) !important;
+  padding-right: 0.75rem !important;
+}
